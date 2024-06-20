@@ -7,7 +7,7 @@ const DynamicProvider = ({ children }: { children: ReactNode }) => {
 	return (
 		<DynamicContextProvider
 			settings={{
-				environmentId: "18f28dba-a643-49d8-a58e-05043e3bb303",
+				environmentId: process.env.NEXT_PUBLIC_ENVIRONMENT_ID!,
         walletConnectors: [StarknetWalletConnectors],
 			}}
 		>
